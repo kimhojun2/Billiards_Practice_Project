@@ -1,0 +1,62 @@
+version: "3.7"
+services:
+  mysql:
+    image: mysql
+    container_name: mysql
+    env_file:
+      - ./db/.env
+    networks:
+      - network
+    volumes:
+      - mysql:/var/lib/mysql
+      - ./db/my.cnf:/etc/mysql/conf.d/my.cnf
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      #TZ : ${TZ}
+    ports:
+      - "3306:3306"
+
+  nginx:
+    image: nginx:1.19.5
+    networks:
+      - network
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./static:/data/static
+    ports:
+      - 80:80
+    depends_on:
+      - django
+
+  django:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: django
+    networks:
+      - network
+    volumes:
+      - ./static:/A202/static
+    command: >
+       bash -c  "
+       python manage.py collectstatic --noinput &&
+       python3 manage.py makemigrations &&
+       python3 manage.py migrate &&  
+       gunicorn A202.wsgi:application -b 0.0.0.0:8000"
+     # bash -c "gunicorn A202.wsgi -b 0.0.0.0:8000"
+    ports:
+      - "8000:8000"
+      - "55555:55555"
+    expose:
+      - "8000"
+    depends_on:
+      - mysql
+networks:
+  network:
+     
+
+volumes:
+  mysql:
