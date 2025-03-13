@@ -34,47 +34,47 @@
 
 ![KakaoTalk_20240215_130531114.png](README/kakaoTalk_20240215_130531114.png)
 
-![KakaoTalk_20240215_130531114_03.png](README%20d75b9919ec5b4461a98525deff191724/KakaoTalk_20240215_130531114_03.png)
+![KakaoTalk_20240215_130531114_03.png](README/KakaoTalk_20240215_130531114_03.png)
 
-![KakaoTalk_20240215_130531114_01.png](README%20d75b9919ec5b4461a98525deff191724/KakaoTalk_20240215_130531114_01.png)
+![KakaoTalk_20240215_130531114_01.png](README/KakaoTalk_20240215_130531114_01.png)
 
 ### 질문답변
 
-![Untitled](README%20d75b9919ec5b4461a98525deff191724/Untitled%201.png)
+![Untitled](README/Untitled%201.png)
 
 ‘질문하기‘ 버튼을 선택하여 커뮤니티 페이지에 해당 공 배치를 질문 가능
 
-![Untitled](README%20d75b9919ec5b4461a98525deff191724/Untitled%202.png)
+![Untitled](README/Untitled%202.png)
 
 ### 답변하기
 
-![Untitled](README%20d75b9919ec5b4461a98525deff191724/Untitled%203.png)
+![Untitled](README/Untitled%203.png)
 
 질문글의 상세 페이지에서 ‘풀어보기’ 버튼을 눌러 질문에 배치된 좌표와 동일한 좌표를 앱에 표시
 
-![Untitled](README%20d75b9919ec5b4461a98525deff191724/Untitled%204.png)
+![Untitled](README/Untitled%204.png)
 
 같은 위치에 공을 두고 친 후 답변에 첨부할 경로를 선택하여 답글 작성
 
-![Untitled](README%20d75b9919ec5b4461a98525deff191724/Untitled%205.png)
+![Untitled](README/Untitled%205.png)
 
-![Untitled](README%20d75b9919ec5b4461a98525deff191724/Untitled%206.png)
+![Untitled](README/Untitled%206.png)
 
 3구에서 자주 볼 수 있는 공 배치, 미리보기를 제공
 
 공 배치 기능, 내가 친 공 경로확인, 정답확인 기능 제공
 
-![Untitled](README%20d75b9919ec5b4461a98525deff191724/Untitled%207.png)
+![Untitled](README/Untitled%207.png)
 
-![Untitled](README%20d75b9919ec5b4461a98525deff191724/Untitled%208.png)
+![Untitled](README/Untitled%208.png)
 
 ## 모바일 앱
 
-![Untitled](README%20d75b9919ec5b4461a98525deff191724/Untitled%209.png)
+![Untitled](README/Untitled%209.png)
 
 질문글 조회, 잡담글 작성/수정
 
-![Untitled](README%20d75b9919ec5b4461a98525deff191724/Untitled%2010.png)
+![Untitled](README/Untitled%2010.png)
 
 프로필 수정, 로그아웃 기능
 
@@ -93,26 +93,26 @@ OpenCV를 이용한 당구공의 좌표 인식
 1. 원본 이미지
 2. GaussianBlur를 이용해 노이즈를 제거합니다.
 
-![Untitled](README%20d75b9919ec5b4461a98525deff191724/Untitled%2011.png)
+![Untitled](README/Untitled%2011.png)
 
-![Untitled](README%20d75b9919ec5b4461a98525deff191724/Untitled%2012.png)
+![Untitled](README/Untitled%2012.png)
 
 1. 이미지 색상 공간을 BGR에서 HSV로 변환해 색 인식을 용이하게 합니다.
 2. 파란색 범위를 흰색, 다른 색상은 검은색으로 처리한 후 Contour를 진행합니다.
 3. Canny를 통해 edge를 검출합니다.
 
-![Untitled](README%20d75b9919ec5b4461a98525deff191724/Untitled%2013.png)
+![Untitled](README/Untitled%2013.png)
 
-![Untitled](README%20d75b9919ec5b4461a98525deff191724/Untitled%2014.png)
+![Untitled](README/Untitled%2014.png)
 
-![Untitled](README%20d75b9919ec5b4461a98525deff191724/Untitled%2015.png)
+![Untitled](README/Untitled%2015.png)
 
 1. 가장 큰 사각형인 당구대를 찾았습니다. 이 당구대의 꼭짓점의 좌표를 이용한 Homography변환을 통해 직사각형의 당구대를 얻었습니다. 
 2. Canny한 이미지에서도 직사각형의 당구대를 찾을 수 있었습니다. 이 이미지에서 HoughCircle을 이용해 원을 찾습니다.
 
-![Untitled](README%20d75b9919ec5b4461a98525deff191724/Untitled%2016.png)
+![Untitled](README/Untitled%2016.png)
 
-![Untitled](README%20d75b9919ec5b4461a98525deff191724/Untitled%2017.png)
+![Untitled](README/Untitled%2017.png)
 
 **최종 공의 색 탐지 영상**
 
