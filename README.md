@@ -32,7 +32,7 @@
 - 최근 공 시작 좌표 확인
 - 최근 공 경로 확인
 
-![KakaoTalk_20240215_130531114.png](README/kakaoTalk_20240215_130531114.png)
+![KakaoTalk_20240215_130531114.png](README/KakaoTalk_20240215_130531114.png)
 
 ![KakaoTalk_20240215_130531114_03.png](README/KakaoTalk_20240215_130531114_03.png)
 
