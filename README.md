@@ -1,3 +1,4 @@
+This is first project in ssafy
 # README
 
 # 🎱Do! 당구당
