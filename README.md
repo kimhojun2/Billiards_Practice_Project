@@ -11,7 +11,7 @@
 - 개발 인원 : 김호준, 박모은, 박세준, 유혜림
 - 역할 [팀명 : IoT (Improved, our Team) ]
 
-![Untitled](README%20d75b9919ec5b4461a98525deff191724/Untitled.png)
+![Untitled](README/Untitled.png)
 
 # **🌏 Project**
 
@@ -25,14 +25,14 @@
 
 ---
 
-![KakaoTalk_20240215_130922668.png](README%20d75b9919ec5b4461a98525deff191724/KakaoTalk_20240215_130922668.png)
+![KakaoTalk_20240215_130922668.png](README/KakaoTalk_20240215_130922668.png)
 
 ### 연습하기
 
 - 최근 공 시작 좌표 확인
 - 최근 공 경로 확인
 
-![KakaoTalk_20240215_130531114.png](README%20d75b9919ec5b4461a98525deff191724/KakaoTalk_20240215_130531114.png)
+![KakaoTalk_20240215_130531114.png](README/kakaoTalk_20240215_130531114.png)
 
 ![KakaoTalk_20240215_130531114_03.png](README%20d75b9919ec5b4461a98525deff191724/KakaoTalk_20240215_130531114_03.png)
 
